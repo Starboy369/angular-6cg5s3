@@ -1,0 +1,8 @@
+<hello name="{{ uname }}"></hello>
+<div *ngFor="let items of checkbox ; let i = index">
+  
+
+  <input type ="checkbox" id="{{items.id}}" [(ngModel)]="items.selected" value = "{{items.name}}" (change)="onSelect($event.target.id, $event.target.selected)">
+  {{items.name}}
+
+  </div>
